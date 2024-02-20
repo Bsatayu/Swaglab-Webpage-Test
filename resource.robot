@@ -6,7 +6,7 @@ Documentation     A resource file with reusable keywords and variables.
 ...               by the imported SeleniumLibrary.
 Library           SeleniumLibrary
 
-# made by 620610809
+# made by Satayu Settakit
 
 *** Variables ***
 ${SERVER}         www.saucedemo.com
@@ -134,5 +134,4 @@ Thank You Page Should Be Open
 Go To Cart
     Click Element  class:shopping_cart_link
 
-# made by 620610809
-    
+# made by Satayu Settakit

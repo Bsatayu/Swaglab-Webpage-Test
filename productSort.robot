@@ -5,12 +5,12 @@ Documentation     A test suite with a single test for valid login.
 ...               the imported resource file.
 Resource          resource.robot
 
-# made by 620610809
+# made by Satayu Settakit
 *** Test Cases ***
 Choose All Filtering
     Open Browser To Login Page
     Input Username    standard_user
-    Input Password    secret_sauce
+    resource.Input Password    secret_sauce
     Submit Credentials
     Welcome Page Should Be Open
     Submit Filtering

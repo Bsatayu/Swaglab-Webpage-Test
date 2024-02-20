@@ -5,12 +5,12 @@ Documentation     A test suite with a single test for valid login.
 ...               the imported resource file.
 Resource          resource.robot
 
-# made by 620610809
+# made by Satayu Settakit
 *** Test Cases ***
 Add Single Product To Cart
     Open Browser To Login Page
     Input Username    standard_user
-    Input Password    secret_sauce
+    resource.Input Password   secret_sauce
     Submit Credentials
     Welcome Page Should Be Open
     Add Product
@@ -21,7 +21,7 @@ Add Single Product To Cart
 Add Multiple Product To Cart
     Open Browser To Login Page
     Input Username    standard_user
-    Input Password    secret_sauce
+    resource.Input Password   secret_sauce
     Submit Credentials
     Welcome Page Should Be Open
     Add Multi Product 
@@ -32,7 +32,7 @@ Add Multiple Product To Cart
 Continue To Shopping
     Open Browser To Login Page
     Input Username    standard_user
-    Input Password    secret_sauce
+    resource.Input Password    secret_sauce
     Submit Credentials
     Welcome Page Should Be Open
     Add Multi Product 
@@ -45,7 +45,7 @@ Continue To Shopping
 Remove The Product
     Open Browser To Login Page
     Input Username    standard_user
-    Input Password    secret_sauce
+    resource.Input Password    secret_sauce
     Submit Credentials
     Welcome Page Should Be Open
     Add Multi Product 
