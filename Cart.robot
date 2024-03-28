@@ -7,49 +7,45 @@ Resource          resource.robot
 
 # made by Satayu Settakit
 *** Test Cases ***
-Add Single Product To Cart
+Add Single Product To Cart Test
     Open Browser To Login Page
-    Input Username    standard_user
-    resource.Input Password   secret_sauce
+    User Login
     Submit Credentials
-    Welcome Page Should Be Open
-    Add Product
+    Products Page Should Be Open
+    Add The Product
     Go To Cart 
     Cart Page Should Be Open
-    [Teardown]    Close Browser
+    Close Browser
 
-Add Multiple Product To Cart
+Add Multiple Product To Cart Test
     Open Browser To Login Page
-    Input Username    standard_user
-    resource.Input Password   secret_sauce
+    User Login
     Submit Credentials
-    Welcome Page Should Be Open
-    Add Multi Product 
+    Products Page Should Be Open
+    Add Multiple Products
     Go To Cart
     Cart Page Should Be Open
-    [Teardown]    Close Browser
+    Close Browser
 
-Continue To Shopping
+Continue To Shopping Test
     Open Browser To Login Page
-    Input Username    standard_user
-    resource.Input Password    secret_sauce
+    User Login
     Submit Credentials
-    Welcome Page Should Be Open
-    Add Multi Product 
+    Products Page Should Be Open
+    Add Multiple Products 
     Go To Cart
     Cart Page Should Be Open
     Continue Shopping
-    Welcome Page Should Be Open
-    [Teardown]    Close Browser
+    Products Page Should Be Open
+    Close Browser
 
-Remove The Product
+Removing The Product Test
     Open Browser To Login Page
-    Input Username    standard_user
-    resource.Input Password    secret_sauce
+    User Login
     Submit Credentials
-    Welcome Page Should Be Open
-    Add Multi Product 
+    Products Page Should Be Open
+    Add Multiple Products 
     Go To Cart
     Cart Page Should Be Open
-    Product Has Been Removed
-    [Teardown]    Close Browser
+    Remove Product
+    Close Browser

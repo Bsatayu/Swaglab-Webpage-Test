@@ -7,18 +7,13 @@ Resource          resource.robot
 
 # made by Satayu Settakit
 *** Test Cases ***
-Choose All Filtering
+Product Sorting Test
     Open Browser To Login Page
-    Input Username    standard_user
-    resource.Input Password    secret_sauce
+    User Login
     Submit Credentials
-    Welcome Page Should Be Open
-    Submit Filtering
-    Select Filtering Z-A
-    Select Filtering Low-High
-    Select Filtering High-Low
-    Select Filtering A-Z
-    [Teardown]    Close Browser
+    Products Page Should Be Open
+    Product Sort
+    Close Browser
 
 
 
